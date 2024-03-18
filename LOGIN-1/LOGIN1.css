@@ -1,0 +1,88 @@
+/* IMPORT FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+/* STYLE LOGIN CSS */
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17202A;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    transition: all 0.3s ease;
+}
+
+div.main-container {
+    border: #1C2833 1px solid;
+    width: 500px;
+    height: 500px;
+    background-color: #1C2833;
+    border-radius: 10px;
+    margin-top: 180px;
+
+    & p.txt-login {
+        text-transform: uppercase;
+        color: #808B96;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    & input.input-username, input.input-email,
+    input.input-password, input.input-cfpassword {
+        width: 400px;
+        height: 50px;
+        margin-left: 45px;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Madimi One", sans-serif;
+        padding-left: 20px;
+        border: #17202A 1px solid;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    & button.button-btn {
+        width: 350px;
+        height: 55px;
+        font-size: 20px;
+        font-family: "Madimi One", sans-serif;
+        margin-left: 70px;
+        margin-top: 35px;
+        border: #17202A 1px solid;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #17202A;
+        color: #fff;
+        transition: 0.3s all ease;
+    }
+
+    & button.button-btn:hover {
+        background-color: #212F3D;
+        border: #212F3D 1px solid;
+    }
+}
+
+@media (max-width: 390px) {
+    div.main-container {
+        width: 350px;
+        
+        & input.input-username, input.input-email,
+        input.input-password, input.input-cfpassword {
+            width: 290px;
+            margin-left: 25px;
+        }
+
+        & button.button-btn {
+            width: 250px;
+            margin-left: 45px;
+        }
+    }
+}
