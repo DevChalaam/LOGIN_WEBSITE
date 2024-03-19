@@ -1,0 +1,118 @@
+/* IMPORT FONT FORM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+/* STYLE CSS LOGIN */
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17202A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    transition: all 0.4s ease;
+}
+
+div.main-container {
+    border: #1C2833 1px solid;
+    width: 550px;
+    height: 630px;
+    margin-top: 110px;
+    background-color: #1C2833;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    & h4.txt-login {
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 26px;
+        color: #566573;
+        transition: all 0.3s ease;
+    }
+
+    & p.txt-username, p.txt-email, p.txt-password, p.txt-cfpassword {
+        font-size: 20px;
+        color: #566573;
+        margin-left: 30px;
+        margin-top: 15px;
+        transition: all 0.3s ease;
+    }
+
+    & input.input-username, input.input-email, input.input-password, input.input-cfpassword {
+        width: 485px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        padding-left: 20px;
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+        border: #17202A 1px solid;
+        transition: all 0.3s ease;
+    }
+
+    & a.link-forgotpass {
+        position: relative;
+        display: block;
+        top: 15px;
+        font-size: 16px;
+        text-decoration: none;
+        float: right;
+        right: 30px;
+        color: #566573;
+        transition: all 0.3s ease;
+    }
+
+    & a.link-forgotpass:hover {
+        color: #808B96;
+    }
+
+    & button.button-btn {
+        transition: all 0.3s ease;
+        width: 400px;
+        height: 53px;
+        margin-left: 70px;
+        margin-top: 45px;
+        border: #17202A 1px solid;
+        border-radius: 10px;
+        background-color: #566573;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: "Madimi One", sans-serif;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    & button.button-btn:hover {
+        background-color: #808B96;
+        border: #808B96 1px solid;
+        color: #000;
+    }
+}
+
+@media (max-width: 390px) {
+    div.main-container {
+        width: 350px;
+        margin-top: 110px;
+
+        & input.input-username, input.input-email, input.input-password, input.input-cfpassword {
+            width: 290px;
+        }
+
+        & button.button-btn {
+            width: 250px;
+            margin-left: 50px;
+        }
+    }
+}
